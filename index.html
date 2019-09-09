@@ -19,7 +19,7 @@
     <div>
         <!–– alt is showing text about the image, if the image does not load ––>
         <!–– title is showing text about the image when you hoover on it with cursor ––>
-        <img src="res/images/me.png" alt="My picture" title = "Not really my picture">
+        <img src="res/images/me.png" alt="My picture" title="Not really my picture">
     </div>
     <div>
         <ol>
@@ -34,7 +34,7 @@
 </section>
 
 <section>
-    <h1> <span>Courses </span> </h1>
+    <h1><span>Courses </span></h1>
     <table>
         <thead>
         <tr>
@@ -47,19 +47,20 @@
         <tbody>
         <tr>
             <td>1</td>
-            <td>Agile software development</td>
+            <td><a href="https://courses.cs.ut.ee/2019/asd/fall" target="_blank"> Agile software development </a></td>
             <td>1</td>
             <td>82</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>System modeling</td>
+            <td><a href="https://courses.cs.ut.ee/2019/SM/fall" target="_blank"> System modeling </a></td>
             <td>1</td>
             <td>85</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>Object-oriented programming</td>
+            <td><a href="https://courses.cs.ut.ee/2019/OOP/spring" target="_blank"> Object-oriented programming </a>
+            </td>
             <td>2</td>
             <td>99</td>
         </tr>
@@ -70,7 +71,22 @@
             <td>65</td>
         </tr>
         </tbody>
+        <tfoot align="center">
+        <tr>
+            <th>#</th>
+            <th>Course Title</th>
+            <th>Semester</th>
+            <th>Grade</th>
+        </tr>
+        </tfoot>
     </table>
+</section>
+
+<section>
+    <form>
+        Add a new course:<br>
+        <input type="text" name="course name"><br>
+    </form>
 </section>
 
 <footer>
@@ -79,10 +95,11 @@
         <!–– li tag defines the list element ––>
         <li>
             <!–– href is a reference to an HTML (for inserting an URL) ––>
-            <a href="https://ois2.ut.ee/">OIS</a>
+            <!–– target="_blank" opens the URL in a new tab -->
+            <a href="https://ois2.ut.ee/" target="_blank"> OIS </a>
         </li>
         <li>
-            <a href="https://courses.cs.ut.ee/">Courses</a>
+            <a href="https://courses.cs.ut.ee/" target="_blank"> Courses </a>
         </li>
     </ul>
 </footer>
